@@ -5,11 +5,14 @@ import LogIn from './pages/LogIn'
 import SignUp from './pages/SignUp'
 import About from './pages/About'
 import Home from './pages/Home'
+import Navbar from './components/Navbar'
 
 function App() {
   
   return (
     <BrowserRouter>
+    <div className='text-white w-full h-[100vh] bg-zinc-950'>
+  <Navbar/>
     <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/profile" element={<Profile/>}/>
@@ -20,6 +23,7 @@ function App() {
 
     </Routes>
     
+    </div>
     </BrowserRouter>
   )
 }
